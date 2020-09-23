@@ -1,0 +1,9 @@
+mixin item(title, descr)
+  .item
+    h2.item-title= title
+    p.item-descr= descr
+
+mixin navLink(link,name)
+  li
+    a(href=link).nav-link=name
+

@@ -12,10 +12,24 @@ header
 
       ul.nav__right
         +navLink("#","О нас")
-        +navLink("#","Услуги")
+        li.nav-menu
+          a.nav-link-menu(href="#") Услуги<i class="fas fa-angle-down"></i>
+             ul.nav-submenu
+               li
+                 a(href="#") меню второго уровня
+               li
+                 a(href="#") меню второго уровня
         +navLink("#","Вакансии")
         +navLink("#","Новости")
-        +navLink("#","Соглашение")
+
+        li.nav-menu
+          a.nav-link-menu(href="#") Cоглашение
+           <i class="fas fa-angle-down"></i>
+             ul.nav-submenu
+               li
+                 a(href="#") меню второго уровня
+               li
+                 a(href="#") меню второго уровня
         +navLink("#","Войти")
         +navLink("#","Зарегистрироваться")
 

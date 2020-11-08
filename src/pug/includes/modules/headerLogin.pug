@@ -13,23 +13,28 @@ header
       ul.nav__right
         +navLink("#","О нас")
         li.nav-menu
-          a.nav-link-menu(href="#") Услуги<i class="fas fa-angle-down"></i>
-             ul.nav-submenu
-               li
-                 a(href="#") меню второго уровня
-               li
-                 a(href="#") меню второго уровня
+          a.nav-link-menu(href="#") Услуги
+            span.checkmark
+              div.checkmark__stem
+              div.checkmark__kick
+          ul.nav-submenu
+            li
+              a(href="#") меню второго уровня
+            li
+              a(href="#") меню второго уровня
         +navLink("#","Вакансии")
         +navLink("#","Новости")
 
         li.nav-menu
-          a.nav-link-menu(href="#") Cоглашение
-           <i class="fas fa-angle-down"></i>
-             ul.nav-submenu
-               li
-                 a(href="#") меню второго уровня
-               li
-                 a(href="#") меню второго уровня
+          a.nav-link-menu(href="#") Cоглашения
+            span.checkmark
+              div.checkmark__stem
+              div.checkmark__kick
+          ul.nav-submenu
+            li
+              a(href="#") меню второго уровня
+            li
+              a(href="#") меню второго уровня
         +navLink("#","Войти")
         +navLink("#","Зарегистрироваться")
 

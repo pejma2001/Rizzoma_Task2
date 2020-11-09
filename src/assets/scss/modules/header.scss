@@ -100,11 +100,7 @@ a:hover {
 }
 
 .nav__right>li>a.nav-menu,
-.nav__right .fa,
-.nav-submenu .fa {
-  margin-left: 5px;
-  color: inherit;
-}
+
 
 .nav-submenu {
   position: absolute;
@@ -136,4 +132,31 @@ a:hover {
   transform: rotateX(0deg);
   visibility: visible;
   opacity: 1;
+}
+
+.button {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 2px solid none;
+  font-weight: 700;
+
+}
+
+.button__enter {
+  border-radius: 22px;
+  background: none;
+  padding: 1rem 2rem;
+  color: #BC9CFF;
+  border: 2px solid;
+  border-image-slice: 1;
+}
+
+.button__register {
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 1rem 2rem;
+  color: #ffffff;
+  border: 2px solid;
+  border-image-slice: 1;
 }

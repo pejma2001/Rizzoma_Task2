@@ -1,0 +1,41 @@
+
+
+
+header
+
+  .header
+    .nav.nav__position
+      ul.nav__left
+        li.nav-link
+          a(href="#")
+            img(src="../assets/img/logo.png")
+
+
+      ul.nav__right
+        +navLink("#","О нас")
+        li.nav-menu
+          a.nav-link-menu(href="#") Услуги
+            span.checkmark
+              div.checkmark__stem
+              div.checkmark__kick
+          ul.nav-submenu
+            li
+              a(href="#") меню второго уровня
+            li
+              a(href="#") меню второго уровня
+        +navLink("#","Вакансии")
+        +navLink("#","Новости")
+
+        li.nav-menu
+          a.nav-link-menu(href="#") Cоглашения
+            span.checkmark
+              div.checkmark__stem
+              div.checkmark__kick
+          ul.nav-submenu
+            li
+              a(href="#") меню второго уровня
+            li
+              a(href="#") меню второго уровня
+        li.nav-menu
+          div.vert-line
+        +navLink("#","Юлий Цезарь")

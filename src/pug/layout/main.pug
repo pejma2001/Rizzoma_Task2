@@ -5,7 +5,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    meta(name="viewport", content="width=device-width")
+    meta(name="viewport" content="width=device-width")
     title #{title}
     meta(name="description", content=description)
     block head
@@ -13,9 +13,10 @@ html(lang='en')
   body(class=pageClass)
     .wrapper
 
-        include ../includes/modules/headerLogin
-        .content-wrapper
-          block content
-        include ../includes/modules/footer
+      include ../includes/modules/headerLogin
+
+      .content-wrapper
+        block content
+      include ../includes/modules/footer
 
     block script

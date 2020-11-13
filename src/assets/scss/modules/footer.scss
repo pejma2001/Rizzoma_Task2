@@ -4,6 +4,7 @@
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/reset";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 .container {}
 
@@ -14,8 +15,6 @@
    width: 100%;
    margin: 0 auto;
    padding: 0 10rem;
-   -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, .05);
-   box-shadow: 0 10px 20px rgba(31, 32, 65, .05);
    line-height: 17px;
    box-sizing: border-box;
 }
@@ -136,6 +135,16 @@
 
 
 .container__bottom {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 10rem;
+   line-height: 17px;
+   box-sizing: border-box;
+   padding-top: 20px;
+   padding-bottom: 20px;
 
    .container__bottom_left {}
 
@@ -151,13 +160,27 @@
    .container__bottom_right {
 
       .conainer__bottom_social {
+         display: flex;
+         position: relative;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+
+         .social a {
+            text-align: center;
+            width: 24px;
+            height: 24px;
+            float: left;
+            background: #fff;
+            border: 1px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 6px;
+            margin: 0 10px 10px 0;
+            padding-left: 6px;
+            color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+         }
 
 
-         .container__bottom_social_twitter {}
 
-         .container__bottom_social_facebook {}
-
-         .container__bottom_social_instagram {}
       }
    }
 }

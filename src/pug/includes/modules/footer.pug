@@ -3,40 +3,68 @@ footer
     .container__top
       .container__top_block
         ul
-          li.nav-link
-          a(href="#")
-            img(src="../assets/img/logo.png")
-          +navLink("#","Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»")
+          li.nav-menu
+            a(href="#")
+              img(src="../assets/img/logo.png")
+          li.nav-menu
+            p.footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
       .container__top_block
         ul
-          +navLink("#","Навигация")
-          +navLink("#","О нас")
-          +navLink("#","Новости")
-          +navLink("#","Служба поддержки")
-          +navLink("#","Услуги")
+          li.nav-menu
+            p.footer__text_bold Навигация
+          li.nav-menu
+            p.footer__text_normal О нас
+          li.nav-menu
+            p.footer__text_normal Новости
+          li.nav-menu
+            p.footer__text_normal Служба поддержки
+          li.nav-menu
+            p.footer__text_normal Услуги
 
       .container__top_block
         ul
-            +navLink("#","О нас")
-            +navLink("#","О сервисе")
-            +navLink("#","Наша команда")
-            +navLink("#","Вакансии")
-            +navLink("#","Инвесторы")
+          li.nav-menu
+            p.footer__text_bold О нас
+          li.nav-menu
+            p.footer__text_normal О сервисе
+          li.nav-menu
+            p.footer__text_normal Наша команда
+          li.nav-menu
+            p.footer__text_normal Вакансии
+          li.nav-menu
+            p.footer__text_normal Инвесторы
 
       .container__top_block
         ul
-          +navLink("#","Служба поддержки")
-          +navLink("#","Соглашения")
-          +navLink("#","Сообщества")
-          +navLink("#","Связь с нами")
+          li.nav-menu
+            p.footer__text_bold Служба поддержки
+          li.nav-menu
+            p.footer__text_normal Соглашения
+          li.nav-menu
+            p.footer__text_normal Сообщества
+          li.nav-menu
+            p.footer__text_normal Связь с нами
 
 
       .container__top_block
         ul
-          +navLink("#","Подписка")
-          +navLink("#","Получайте специальные предложения и новости сервиса")
-          +navLink("#","Вакансии")
+          li.nav-menu
+            p.footer__text_bold Подписка
+          li.nav-menu
+            p.footer__text Получайте специальные предложения и новости сервиса
+          li.nav-menu
+            form
+              input.form__email(type='email' name='send' placeholder='Email')
+              span.email__button
+                a.button(href="#")
+                  .emai__button_arrow
+                    span.arrow
+                      div.arrow__stem
+                      div.arrow__kick
+                      div.checkmark_line
+
+    hr
     .container__bottom
       .container__bottom_left
         .container__bottom_copiright

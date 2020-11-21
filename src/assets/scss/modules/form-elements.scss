@@ -1,0 +1,56 @@
+.form-element-top {
+   .form-element-top__left {
+      box-sizing: border-box;
+      width: 33%;
+
+      .form-top__left {
+         label {
+            display: flex;
+            justify-content: space-between;
+
+
+            .label__left {
+               font-weight: 700;
+               font-size: 12px;
+               color: $neutral-primary;
+               text-transform: uppercase;
+            }
+
+            .label__right {
+               font-weight: 400;
+               font-size: 12px;
+               color: $neutral-secondary;
+               text-transform: uppercase;
+            }
+
+
+         }
+
+         #fname {
+            width: 100%;
+            border: 2px solid $neutral-placeholder;
+            font-size: 14px;
+            padding: 10px;
+            margin-bottom: 20px;
+         }
+
+         #lname {
+            width: 100%;
+            border: 2px solid $neutral-secondary;
+            font-size: 14px;
+            padding: 10px;
+            margin-bottom: 20px;
+         }
+      }
+
+   }
+
+   .form-element-top__middle {}
+
+   .form-element-top__right {}
+
+}
+
+.form-element-middle {}
+
+.form-element-right {}
